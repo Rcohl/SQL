@@ -8,16 +8,16 @@ FROM tag;
 
 -- Exo 1.1
 -- Écrivez la requête qui permet de lister tous les students
-SELECT * FROM `student`
+SELECT * FROM student
 -- Exo 1.2
 -- Écrivez la requête qui permet de lister tous les projects
-SELECT * FROM `project`
+SELECT * FROM project
 -- Exo 1.3
 -- Écrivez la requête qui permet de lister le student dont l'id est `2`
 SELECT * FROM student WHERE id = 2;
 -- Exo 1.4
 -- Écrivez la requête qui permet de lister les students dont l'id n'est pas `2`
-SELECT * FROM student WHERE id <> 2;
+SELECT * FROM student WHERE id != 2;
 -- Exo 1.5
 -- Écrivez la requête qui permet de lister le project dont l'id est `3`
 SELECT * FROM project WHERE id = 3;
