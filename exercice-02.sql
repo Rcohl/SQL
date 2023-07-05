@@ -86,7 +86,7 @@ DELETE FROM student WHERE id = 99;
 -- Vous devez écrire trois requêtes pour réaliser la tâche.
 -- Note : vous devez supprimez les relations avec les dépendances mais pas les dépendances.
 -- Autrement dit ne supprimez aucun student ni aucun tag.
-SELECT id FROM project WHERE name = 'Ut delectus explicabo.'; -- id est 16
+--SELECT id FROM project WHERE name = 'Ut delectus explicabo.'; -- id est 16
 DELETE FROM project_tag WHERE project_id = 16;
 DELETE FROM student WHERE project_id = 16;
 DELETE FROM project WHERE id = 16;
