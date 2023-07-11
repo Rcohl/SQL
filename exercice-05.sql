@@ -23,8 +23,8 @@ JOIN tag ON tag.id = student_tag.tag_id
 WHERE student_tag.student_id = 2;
 -- Exo 5.4
 -- Listez le tag dont l'id est `2` avec ses students
-SELECT student.id, student.lastname, student.firstname, tag.id, tag.name
+SELECT tag.id, tag.name, student.id, student.lastname, student.firstname 
 FROM student_tag
-JOIN student ON student.id = student_tag.student_id
 JOIN tag ON tag.id = student_tag.tag_id
+JOIN student ON student.id = student_tag.student_id
 WHERE student_tag.tag_id = 2;
