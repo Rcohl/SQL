@@ -16,12 +16,12 @@ WHERE student.id = 2;
 -- Exo 4.3
 -- Listez tous les projects avec leurs students
 -- Note : les projets sans studets ne doivent pas apparaître dans les résultats
-SELECT student.id, student.lastname, student.firstname, project.id, project.name
+SELECT project.id, project.name, student.id, student.lastname, student.firstname
 FROM student
 INNER JOIN project ON project.id = student.project_id;
 -- Exo 4.4
 -- Listez le project dont l'id est `3` avec ses students
-SELECT student.id, student.lastname, student.firstname, project.id, project.name
+SELECT project.id, project.name, student.id, student.lastname, student.firstname
 FROM student
 INNER JOIN project ON project.id = student.project_id;
 WHERE student.project_id = 3;
